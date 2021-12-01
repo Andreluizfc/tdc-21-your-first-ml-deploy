@@ -51,7 +51,9 @@ docker run -p 8080:8080 ml_model:1.0
 4. Install plugin-manifest. `heroku plugins:install @heroku-cli/plugin-manifest`\
 5. Create your app `heroku create YOUR-APP-NAME --manifest`\
 6. Check if app has been created. Your app should be listed. `heroku apps`\
-7. Publish your app. `git push heroku master`
-8. Check app status. `heroku logs -a app-name`
+7. Update Remote `heroku git:remote -a YOUR-APP-NAME`
+8. Publish your app. `git push heroku main`
+9. Check app status. `heroku logs -a YOUR-APP-NAME`
 
 Now you can visit you deployed app in the URL Heroku made for you.
+https://YOUR-APP-NAME.herokuapp.com/
