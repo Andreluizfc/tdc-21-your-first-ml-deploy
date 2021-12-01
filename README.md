@@ -46,11 +46,11 @@ docker run -p 8080:8080 ml_model:1.0
 ### Deploy to Heroku
 
 1. Install heroku Comand Line Interface (CLI).
-2. Login to Heroku. `heroku login -i`\
-3. Update to beta. `heroku update beta`\
-4. Install plugin-manifest. `heroku plugins:install @heroku-cli/plugin-manifest`\
-5. Create your app `heroku create YOUR-APP-NAME --manifest`\
-6. Check if app has been created. Your app should be listed. `heroku apps`\
+2. Login to Heroku. `heroku login -i`
+3. Update to beta. `heroku update beta`
+4. Install plugin-manifest. `heroku plugins:install @heroku-cli/plugin-manifest`
+5. Create your app `heroku create YOUR-APP-NAME --manifest`
+6. Check if app has been created. Your app should be listed. `heroku apps`
 7. Update Remote `heroku git:remote -a YOUR-APP-NAME`
 8. Publish your app. `git push heroku main`
 9. Check app status. `heroku logs -a YOUR-APP-NAME`
